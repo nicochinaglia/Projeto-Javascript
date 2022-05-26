@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumini Games</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css"> 
+</head>
+<body>
+
+    <img src="images/fundo.jpg" style="width: 100%;" alt="O background principal da pagina retrata uma guerra onde há duas pessoas do lado esquerdo atacando duas pessoas do lado direito">
+
+    <div class="container">
+
+        <header class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" style="width: 100px;" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="lancamentos/lancamentos.html">Lançamentos</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Games +
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="reviews/reviews.html">Reviews</a>
+                    <a class="dropdown-item" href="#">Top 10</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Consoles</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+        </header>
+
+        <main>
+          <section id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="images/aurelion.jpg" alt="Primeiro Slide: Retrato de um personagem do jogo League of Legends, chamado Aurelion Son, um dragão galatico">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/sugarrush.jpg" alt="Segundo Slide: Um background que mostra 3 personagens do jogo League of Legends com a tematica de doces">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="images/cosmic.jpg" alt="Terceiro Slide: Retrato de uma personagem do jogo League of Legends. Soraka, na imagem ela esta com um traje tematico das galaxias">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </section>
+
+          <section class="row">
+            <article class="col">
+                <div class="cardBalan">
+                    <img class="card-img-top" src="images/balan.jpg" alt="Imagem do game Balan Wonderland" style="opacity: 10%;" id="balan">
+                    <div class="card-body">
+                      <h5 class="card-title">LANÇAMENTOS</h5>
+                      <p class="card-text">Fique por dentro das principais novidades.</p>
+                      <a href="lancamentos/lancamentos.html" class="btn btn-primary" onmouseover="mudaopacidadebalan()" onmouseout="voltaopacidadebalan()">Visitar</a>
+                    </div>
+                  </div>
+            </article>
+
+            <article class="col">
+                <div class="cardBalan">
+                    <img class="card-img-top" src="images/antigo.jpg" alt="Imagem do game Yoshi Island" style="opacity: 10%;" id="yoshi">
+                    <div class="card-body">
+                      <h5 class="card-title">GAMES ANTIGOS</h5>
+                      <p class="card-text">Games que marcaram uma geração.</p>
+                      <a href="#" class="btn btn-primary" onmouseover="mudaopacidadeyoshi()" onmouseout="voltaopacidadeyoshi()">Visitar</a>
+                    </div>
+                  </div>
+            </article>
+
+            <article class="col">
+                <div class="cardBalan">
+                    <img class="card-img-top" src="images/ps5.jpg" alt="Imagem Playstation 5" style="opacity: 10%;" id="ps5">
+                    <div class="card-body">
+                      <h5 class="card-title">REVIEW PS5</h5>
+                      <p class="card-text">Saiba tudo sobre o novo console da Sony.</p>
+                      <a href="#" class="btn btn-primary" onmouseover="mudaopacidadeps5()" onmouseout="voltaopacidadeps5()">Visitar</a>
+                    </div>
+                  </div>
+            </article>       
+
+          </section>
+
+          <section class="row">
+
+            <div class="col-1" id="traco">
+                <hr>
+            </div>
+            <div class="col-4">
+                <h1 style="color: #DB163E;">Últimas notícias</h1>
+            </div>
+            <div class="col" id="traco">
+                <hr>
+            </div>
+
+          </section>
+
+          <section class="row">
+            
+            <article class="col-10" id="noticia1" onmouseover="mudaFundo1()" onmouseout="voltaFundo1()">
+              <a href="reviews/reviews.html"><img src="images/khmelody.jpg" alt="Imagem do jogo Kindgom hearts Melody of Memory" style="width: 150px;"></a> 
+                    <div class="textoNoticia">
+                        <h3>REVIEW Kingdom Hearts Melody of Memory</h3>
+                        <p>Celebração musical de uma das melhores trilhas da indústria é também ótimo jogo de ritmo.</p>
+                    </div>
+            </article>
+            <article class="col-10" id="noticia2" onmouseover="mudaFundo2()" onmouseout="voltaFundo2()">
+               <a href="reviews/reviews.html"><img src="images/animal.jpg" alt="Imagem do jogo Animal Crossing" style="width: 150px;"></a> 
+                    <div class="textoNoticia">
+                        <h3>REVIEW Animal Crossing: New Horizons</h3>
+                        <p>Com ritmo de progressão renovado e atenção absurda aos detalhes, Animal Crossing chega ao seu ápice no Switch.</p>
+                    </div>
+            </article>
+            <article class="col-10" id="noticia3" onmouseover="mudaFundo3()" onmouseout="voltaFundo3()">
+              <a href="reviews/reviews.html"><img src="images/dragonquest.jpg" alt="Imagem do jogo Dragon Quest XI" style="width: 150px;"></a> 
+                    <div class="textoNoticia">
+                        <h3>LANÇAMENTO Dragon Quest XI</h3>
+                        <p>Cheio de nostalgia para os amantes da saga, o game traz batalhas em turnos mais de 100 horas de gameplay. </p>
+                    </div>
+            </article>
+            
+          </section>
+        </main>
+
+          <footer class="rodape">
+            <img src="images/logo.png" style="width: 100px; margin-bottom: 20px;" alt="Logo Lumini Games">
+            <p>2020 - Todos os direitos reservados</p>
+          </footer>
+
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+
+// Muda a opacidade do card Lançamentos 
+    function mudaopacidadebalan(){
+        document.getElementById("balan").style.opacity = "100%";
+    }
+
+    function voltaopacidadebalan(){
+        document.getElementById("balan").style.opacity = "10%";
+    }
+
+// Muda a opacidade do card Games Antigos
+    function mudaopacidadeyoshi(){
+        document.getElementById("yoshi").style.opacity = "100%";
+    }
+
+    function voltaopacidadeyoshi(){
+        document.getElementById("yoshi").style.opacity = "10%";
+    }
+
+// Muda a opacidade do card Review PS5
+    function mudaopacidadeps5(){
+        document.getElementById("ps5").style.opacity = "100%";
+    }
+
+    function voltaopacidadeps5(){
+        document.getElementById("ps5").style.opacity = "10%";
+    }
+
+// Muda o fundo da noticia 1
+    function mudaFundo1(){
+        document.getElementById("noticia1").style.backgroundColor = "#DB163E"
+    }    
+
+    function voltaFundo1(){
+        document.getElementById("noticia1").style.backgroundColor = "#18191A"
+    } 
+
+// Muda o fundo da noticia 2
+    function mudaFundo2(){
+        document.getElementById("noticia2").style.backgroundColor = "#DB163E"
+    }    
+
+    function voltaFundo2(){
+        document.getElementById("noticia2").style.backgroundColor = "#18191A"
+    } 
+
+// Muda o fundo da noticia 3
+function mudaFundo3(){
+        document.getElementById("noticia3").style.backgroundColor = "#DB163E"
+    }    
+
+    function voltaFundo3(){
+        document.getElementById("noticia3").style.backgroundColor = "#18191A"
+    }     
+</script>
+</body>
+</html>

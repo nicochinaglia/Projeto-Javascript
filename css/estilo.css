@@ -1,0 +1,58 @@
+
+body{
+    background-color:#18191A;
+    margin: auto;    
+    position: relative;
+}
+
+.container{
+    width: 960px;
+    position: absolute;
+    margin-top: -990px;
+    margin-left: 180px;
+}
+
+
+.cardBalan{
+    width: 18rem; 
+    margin-top: 20px; 
+    background-color: #343A40; 
+    color: white;
+}
+
+#traco{
+    height: 2px;
+    background-color: white;
+    margin-top: 25px;
+}
+
+#noticia1{
+    display: flex;
+    justify-content: space-around;
+}
+
+#noticia2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#noticia3{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.textoNoticia{
+    margin-left: 20px;
+    text-align: justify;
+    color: white;
+}
+
+.rodape{
+    text-align: center;
+    color: white;
+    background-color: #343A40;
+    padding: 20px;
+    margin-top: 30px;
+}
